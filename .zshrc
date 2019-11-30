@@ -2,6 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export GOPATH=$HOME/go
 # Path to your oh-my-zsh installation.
+
+export WORKON_HOME=$HOME/.virtualenvs
+source $HOME/.local/bin/virtualenvwrapper.sh
+
 export ZSH="/home/ubuntu/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -69,7 +73,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 export TERM="xterm-256color"
-plugins=(git)
+plugins=(git virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,6 +93,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
 HISTSIZE=1000000
 SAVEHIST=1000000
