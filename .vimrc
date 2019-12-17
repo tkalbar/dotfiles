@@ -12,3 +12,5 @@
 
 imap jk <Esc>
 imap kj <Esc>
+
+noremap <silent> <space> :exe "normal a".nr2char(getchar())<CR>
