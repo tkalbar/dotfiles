@@ -12,5 +12,5 @@
 
 imap jk <Esc>
 imap kj <Esc>
-
+set backspace=indent,eol,start
 noremap <silent> <space> :exe "normal a".nr2char(getchar())<CR>
