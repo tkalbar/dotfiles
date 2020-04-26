@@ -3,6 +3,7 @@
 # export GOPATH=$HOME/go
 # Path to your oh-my-zsh installation.
 
+source $HOME/dotfiles/env.sh
 export WORKON_HOME=$HOME/.virtualenvs
 source $HOME/.local/bin/virtualenvwrapper.sh
 
