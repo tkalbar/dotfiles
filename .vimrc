@@ -14,5 +14,5 @@ imap jk <Esc>
 imap kj <Esc>
 set backspace=indent,eol,start
 noremap <silent> <space> :exe "normal a".nr2char(getchar())<CR>
-set tabstop=4 shiftwidth=4 expandtab
+set tabstop=2 shiftwidth=2 expandtab
 set clipboard=unnamed
